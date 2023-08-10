@@ -1,0 +1,340 @@
+/* Rubik font */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik";
+}
+
+body {
+  background: url("./images/lavender-field.jpg");
+  background-attachment: fixed;
+  overflow: hidden;
+}
+body .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 110vh;
+  background: rgba(39, 39, 39, 0.4);
+}
+body .wrapper .nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  background: linear-gradient(rgba(39, 39, 39, 0.6), transparent);
+  z-index: 100;
+}
+body .wrapper .nav .nav-logo p {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+}
+body .wrapper .nav .nav-menu ul {
+  display: flex;
+}
+body .wrapper .nav .nav-menu ul li {
+  list-style-type: none;
+}
+body .wrapper .nav .nav-menu ul li .link {
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+  padding-bottom: 15px;
+  margin: 0 25px;
+}
+body .wrapper .nav .link:hover,
+body .wrapper .nav .active {
+  border-bottom: 2px solid #fff;
+}
+body .wrapper .nav .nav-button .btn {
+  width: 130px;
+  height: 40px;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.4);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+body .wrapper .nav .nav-button .btn #registerBtn {
+  margin-left: 15px;
+}
+body .wrapper .nav .nav-button .btn .btn .white-btn {
+  background: rgba(255, 255, 255, 0.7019607843);
+}
+body .wrapper .nav .nav-button .btn .btn .btn .white-btn:hover {
+  background: rgba(255, 255, 255, 0.5019607843);
+}
+body .wrapper .nav .btn:hover {
+  background: rgba(255, 255, 255, 0.3019607843);
+}
+body .wrapper .nav .nav-menu-btn {
+  display: none;
+}
+body .wrapper .nav .form-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 512px;
+  height: 420px;
+  overflow: hidden;
+  z-index: 2;
+}
+body .wrapper .nav-menu-btn {
+  display: none;
+}
+body .wrapper .form-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 512px;
+  height: 420px;
+  overflow: hidden;
+  z-index: 2;
+}
+body .wrapper .form-box .login-container {
+  position: absolute;
+  left: 4px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s ease-in-out;
+}
+body .wrapper .form-box .login-container .top header {
+  color: #fff;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 10px 0 30px 0;
+  font-weight: 500;
+}
+body .wrapper .form-box .login-container .top span {
+  color: #fff;
+  font-size: small;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+body .wrapper .form-box .login-container .top span a {
+  font-weight: 500;
+  color: #fff;
+  margin-left: 5px;
+}
+body .wrapper .form-box .login-container .top span a:hover {
+  color: burlywood;
+}
+body .wrapper .form-box .login-container .input-box .input-field {
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  height: 50px;
+  width: 100%;
+  padding: 0 10px 0 45px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  transition: 0.2s ease;
+  margin-bottom: 10px;
+}
+body .wrapper .form-box .login-container .input-box .submit {
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.7019607843);
+  color: #000000;
+  height: 50px;
+  width: 100%;
+  padding: 0 10px 0 45px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  transition: 0.2s ease;
+}
+body .wrapper .form-box .login-container .input-box .input-field:hover,
+body .wrapper .form-box .login-container .input-box .input-field:focus {
+  background: rgba(255, 255, 255, 0.25);
+}
+body .wrapper .form-box .login-container .input-box ::-webkit-input-placeholder {
+  color: #fff;
+}
+body .wrapper .form-box .login-container .input-box i {
+  position: relative;
+  top: -35px;
+  left: 17px;
+  color: #fff;
+}
+body .wrapper .form-box .login-container .two-col {
+  color: #fff;
+  padding-top: 10px;
+}
+body .wrapper .form-box .login-container .two {
+  position: relative;
+  bottom: 20px;
+  float: right;
+}
+body .wrapper .form-box .login-container .two label a {
+  color: #fff;
+}
+body .wrapper .form-box .register-container {
+  position: absolute;
+  right: -520px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s ease-in-out;
+}
+body .wrapper .form-box .register-container .two-forms {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body .wrapper .form-box .register-container .two-forms .input-box .input-field {
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  height: 50px;
+  width: 100%;
+  padding: 0 10px 0 45px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  transition: 0.2s ease;
+}
+body .wrapper .form-box .register-container .two-forms .input-box .input-field i {
+  position: relative;
+  top: -35px;
+  left: 17px;
+  color: #fff;
+}
+body .wrapper .form-box .register-container .two-forms .input-box .display {
+  display: inline;
+}
+body .wrapper .form-box .register-container .two-forms .input-box .input-field:hover,
+body .wrapper .form-box .register-container .two-forms .input-box .input-field:focus {
+  background: rgba(255, 255, 255, 0.25);
+}
+body .wrapper .form-box .register-container .two-forms .input-box ::-webkit-input-placeholder {
+  color: #fff;
+}
+body .wrapper .form-box .register-container .two-forms .input-box .input-field {
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  height: 50px;
+  width: 100%;
+  padding: 0 10px 0 45px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  transition: 0.2s ease;
+}
+body .wrapper .form-box .register-container .two-forms .input-box .input-field:hover,
+body .wrapper .form-box .register-container .two-forms .input-box .input-field:focus {
+  background: rgba(255, 255, 255, 0.25);
+}
+body .wrapper .form-box .register-container .two-forms .input-box ::-webkit-input-placeholder {
+  color: #fff;
+}
+body .wrapper .form-box .register-container .two-forms .input-box i {
+  position: relative;
+  top: -35px;
+  left: 17px;
+  color: #fff;
+}
+body .wrapper .form-box .register-container .two-forms .input-box .submit {
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+  height: 45px;
+  width: 100%;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.7019607843);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+body .wrapper .form-box .register-container .two-forms .input-box .submit:hover {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+body .wrapper .form-box .register-container .two-col {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: small;
+  margin-top: 10px;
+}
+body .wrapper .form-box .register-container .two-col .one {
+  display: flex;
+  gap: 5px;
+}
+body .wrapper .form-box .register-container .two-col .two label a {
+  text-decoration: none;
+  color: #fff;
+}
+body .wrapper .form-box .register-container .two-col .two label a:hover {
+  text-decoration: underline;
+}
+@media only screen and (max-width: 786px) {
+  body .nav-button {
+    display: none;
+  }
+  body .nav-menu.responsive {
+    top: 100px;
+  }
+  body .nav-menu {
+    position: absolute;
+    top: -800px;
+    display: flex;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: 90vh;
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    transition: 0.3s;
+  }
+  body .nav-menu ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  body .nav-menu-btn {
+    display: block;
+  }
+  body .nav-menu-btn i {
+    font-size: 25px;
+    color: #fff;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  body .nav-menu-btn i:hover {
+    background: rgba(255, 255, 255, 0.1490196078);
+  }
+}
+@media only screen and (max-width: 425px) {
+  body .wrapper {
+    min-height: 100vh;
+    max-width: 100vw;
+  }
+  body .wrapper .register-container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  body .wrapper .login-container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  body .wrapper .register-container .two-forms {
+    flex-direction: column;
+    gap: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
